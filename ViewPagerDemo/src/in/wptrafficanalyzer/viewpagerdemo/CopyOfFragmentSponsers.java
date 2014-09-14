@@ -41,9 +41,9 @@ public class CopyOfFragmentSponsers extends Fragment {
 //	    gridview.setAdapter(new IconAdapter(this, iconSize));
 //	    gridview.setOnItemClickListener(this);
 //	    CONTENT_URI=Uri.parse("content://"+iconsProvider.class.getCanonicalName());
-//	    return view;
-	        }
-	    });
+    return view;
+//	        }
+//	    });
 	}
 }
 
