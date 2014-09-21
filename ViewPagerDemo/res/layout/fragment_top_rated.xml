@@ -10,8 +10,9 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:text="This will be about awesome we are!"
-        android:textColor="#ffffff"
+        android:text="Well, nothing special, just another regular home screen"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#000000"
         android:textSize="20dp" />
 
 </RelativeLayout>

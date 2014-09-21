@@ -1,9 +1,5 @@
 package in.wptrafficanalyzer.viewpagerdemo;
 
-import in.wptrafficanalyzer.viewpagerdemo.R;
-import in.wptrafficanalyzer.viewpagerdemo.R.id;
-import in.wptrafficanalyzer.viewpagerdemo.R.layout;
-import in.wptrafficanalyzer.viewpagerdemo.R.menu;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;

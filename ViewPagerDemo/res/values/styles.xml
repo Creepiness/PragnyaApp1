@@ -1,6 +1,5 @@
 <resources>
 
     <style name="AppTheme" parent="android:Theme.Light" />
-    <style name="KiranBhai" parent="android:Theme.Light" />
-    
+
 </resources>

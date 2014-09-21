@@ -1,8 +1,5 @@
 package in.wptrafficanalyzer.viewpagerdemo;
 
-import in.wptrafficanalyzer.viewpagerdemo.R;
-import in.wptrafficanalyzer.viewpagerdemo.R.id;
-import in.wptrafficanalyzer.viewpagerdemo.R.layout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;

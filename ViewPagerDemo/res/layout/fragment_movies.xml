@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:text="This will be about awesome we are!"
+        android:text="This place is dedicated for the &apos;glorious&apos; execom"
         android:textColor="#ffffff"
         android:textSize="20dp" />
 

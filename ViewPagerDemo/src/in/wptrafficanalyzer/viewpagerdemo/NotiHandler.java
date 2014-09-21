@@ -1,9 +1,5 @@
 package in.wptrafficanalyzer.viewpagerdemo;
 
-import in.wptrafficanalyzer.viewpagerdemo.R;
-import in.wptrafficanalyzer.viewpagerdemo.R.id;
-import in.wptrafficanalyzer.viewpagerdemo.R.layout;
-import in.wptrafficanalyzer.viewpagerdemo.R.menu;
 import android.accounts.OnAccountsUpdateListener;
 import android.app.Activity;
 import android.content.DialogInterface.OnClickListener;
@@ -33,7 +29,7 @@ public class NotiHandler extends Activity implements android.view.View.OnClickLi
 		// TODO Auto-generated method stub
 		if(v.getId() == R.id.button1)
 		{
-			startActivity(new Intent(getApplicationContext(), FragmentDeveloper.class));
+			startActivity(new Intent(getApplicationContext(), DeveloperFragment.class));
 		}
 	}
 }

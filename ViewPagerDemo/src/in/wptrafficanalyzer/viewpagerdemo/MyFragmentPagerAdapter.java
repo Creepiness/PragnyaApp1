@@ -26,14 +26,14 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter{
 		
 		switch (arg0) {
 		case 0:
-			// home fragment activity
-			return new FragmentHome();
+			// Top Rated fragment activity
+			return new TopRatedFragment();
 		case 1:
 			// Games fragment activity
-			return new FragmentGames();
+			return new GamesFragment();
 		case 2:
 			// Movies fragment activity
-			return new FragmentCcommittee();
+			return new MoviesFragment();
 		}
 
 		return null;
@@ -55,8 +55,8 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter{
 			// Games fragment activity
 			return "About";
 		case 2:
-			// corecommittee activity
-			return "Core-Committee";
+			// Movies fragment activity
+			return "Execom";
 		}
 		return null;
 	}
