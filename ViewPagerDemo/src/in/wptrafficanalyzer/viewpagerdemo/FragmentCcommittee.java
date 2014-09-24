@@ -11,6 +11,7 @@ import java.util.List;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,12 +26,10 @@ public class FragmentCcommittee extends Fragment {
          "Sharath", 
          "Chaitanya Pramod",
          "Srikruthi J",
-         "A.Vishnu Vardhan", 
-         "Shreya", 
+         "B Sowmya", 
          " Akash", 
          "Karthik G.", 
          "Siri", 
-         "Sowmya",
          "Raveena R",
          "Luqmaan",
          "Ujwal Reddy",
@@ -39,15 +38,15 @@ public class FragmentCcommittee extends Fragment {
          "Prabhath Kollimarla",
          "V.V.S Sandeep", 
          "Srikanth", 
+         "Bharath", 
          "Abhinay Byrisetty",
          "Varsha Doli",
-         "Bharath", 
-         "Shashank", 
          "Anusha K", 
-         "Jayanth",
-         "Prashanth", 
+         "Prashanth",
+         "Shashank", 
+         "Jayanth", 
          "Vivek Vardhan Reddy",
-         " Bhargav",
+         "Narendra",
          "Shruthi Kavya",
          "Sai Teja Mahadev",
          "Rohit Walia",
@@ -55,40 +54,36 @@ public class FragmentCcommittee extends Fragment {
 	 
 
  public static final String[] descriptions = new String[] {
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc",
-         "cc"};
+         "Treasury",
+         "Treasury",
+         "Event Management",
+         "Event Management",
+         "Workshops",
+         "Workshops",
+         "Documentation",
+         "Documentation",
+         "Publicity",
+         "Publicity",
+         "Publicity",
+         "Publicity",
+         "Publicity",
+         "Publicity",
+         "Publicity",
+         "Resource Management",
+         "Resource Management",
+         "Resource Management",
+         "Resource Management",
+         "Resource Management",
+         "Volunteer Management",
+         "Volunteer Management",
+         "Certificates",
+         "Web Team & Photoshop",
+         "Web Team & Photoshop",
+         "Web Team & Photoshop",
+         "Sponsership",
+         "Sponsership",
+         "Hospatility",
+         "Hospatility"};
 
  public static final Integer[] images = {
 	 R.drawable.onlypcool2,
@@ -122,9 +117,8 @@ public class FragmentCcommittee extends Fragment {
 	 R.drawable.onlypcool2,
 	 R.drawable.onlypcool2,
 	 R.drawable.onlypcool2,
-	 R.drawable.onlypcool2,
-	 R.drawable.onlypcool2, 
-	 R.drawable.onlypcool2};
+	 R.drawable.onlypcool2
+	 };
 
  ListView listView;
  List<RowItem> rowItems;
@@ -135,11 +129,16 @@ public class FragmentCcommittee extends Fragment {
 //     super.onCreate(savedInstanceState);
 //     setContentView(R.layout.execom_fragment);
 //     
-     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {             
-    	    View rootView = inflater.inflate(R.layout.fragment_committee, container, false);
+     public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    		 Bundle savedInstanceState) {  
+	 
+	 
+	 try{	    
+		 View rootView = rootView = inflater.inflate(R.layout.fragment_committee, container, false);
+    }
+    catch (InflateException e){
+    }
      
-     
-
      rowItems = new ArrayList<RowItem>();
      for (int i = 0; i < titles.length; i++) {
          RowItem item = new RowItem(images[i], titles[i], descriptions[i]);

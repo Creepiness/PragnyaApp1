@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.util.Log;
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter{
 	
@@ -33,9 +34,9 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter{
 			return new FragmentGames();
 		case 2:
 			// Movies fragment activity
-			return new FragmentCcommittee();
+			return new FragmentCcommittee();	
+	
 		}
-
 		return null;
 	}
 
